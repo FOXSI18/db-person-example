@@ -1,0 +1,743 @@
+{
+  "tables": [
+    {
+      "id": "smZh0yJa2tvNyFHPWYFL9",
+      "name": "Person",
+      "x": 1561.4074462884835,
+      "y": 218.90939782788823,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "n-FU7eyeRT04-iNtWOSst"
+        },
+        {
+          "id": "jR0g1SVY_-TEH2_kOaji_",
+          "name": "Vorname",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "0XBI1B96MkAOZOZSThPxf",
+          "name": "Nachname",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "OuBQ-L5sTzcjuH7GL8Skg",
+          "name": "Geburtsdatum",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "6VPhVDyf41G2_qKZRl6IP",
+          "name": "Telefonnummer",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": 20
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false,
+      "width": 282
+    },
+    {
+      "id": "5iIPEXveq-XDmUgTnydg9",
+      "name": "Bundesland",
+      "x": 210.7836834901193,
+      "y": -214.3672460356538,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "GeARkiGJE61q35NMg5KE4"
+        },
+        {
+          "id": "hEvRZYh8u_sY0Sdkj9FjV",
+          "name": "LandId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "P4AHozzcgc__IbUBc6py0",
+          "name": "Name",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false,
+      "width": 217
+    },
+    {
+      "id": "PefdkdekXrihvcF_k9HkY",
+      "name": "Bezirk",
+      "x": 184.10972256129264,
+      "y": 55.58942855615226,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "DYkwMuasxZV3_olI_87hL"
+        },
+        {
+          "id": "hlSvixqUJcR585tM4gS1h",
+          "name": "Name",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "SVSP8GD0RsTDCDw2f0JJm",
+          "name": "BundeslandId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false,
+      "width": 209
+    },
+    {
+      "id": "BwWhr8AGtVbfgUMJ2FwIN",
+      "name": "Strasse",
+      "x": 442.2740226139962,
+      "y": 334.0725821106003,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "yxRHEa9fq-_77LQxMn0Ux"
+        },
+        {
+          "id": "oRetr0RMMDjB6ljVCeVJ7",
+          "name": "BezirkId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "MOTXM1QW2SUjSVbTHzdjP",
+          "name": "Name",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false
+    },
+    {
+      "id": "wFUiUnn_olmJILiTQJnu-",
+      "name": "Adresse",
+      "x": 831.4127440754854,
+      "y": 233.89652631405602,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "jOweqHM0BkvVUQ4-q2VvC"
+        },
+        {
+          "id": "4ZZAR-sucjoQbwC2akX3C",
+          "name": "StrasseId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "nDiPsrEfBTg_MCR1Dmfvw",
+          "name": "Hausnummer",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "GhSoXqJRU0js67c7PwQni",
+          "name": "Stock",
+          "type": "TINYINT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "pGmLAjIvIneYNrC7hBUfO",
+          "name": "Tuer",
+          "type": "SMALLINT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false
+    },
+    {
+      "id": "5pcI-8Yt_W-ZDndTGItYZ",
+      "name": "Land",
+      "x": 482.47678602931967,
+      "y": -427.28886042398,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "NUTff-2QHLSxJYFroryev"
+        },
+        {
+          "id": "DL6BnyXEi8lkeODadaDQ5",
+          "name": "Name",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 20
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false
+    },
+    {
+      "id": "7g1jM6YuJKLFsN_6xmUwJ",
+      "name": "PLZ",
+      "x": -258.6286173195156,
+      "y": 55.01411079214449,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "vNHpbCaICPtaYTwjLxYhU"
+        },
+        {
+          "id": "HnLbE6N7QIrafbALVJmP5",
+          "name": "PLZ",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 10,
+          "values": []
+        },
+        {
+          "id": "qqrGD71OwNFbJ8CZfGez1",
+          "name": "BezirkId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false
+    },
+    {
+      "id": "eHIYIwXgl7vQdiIF6qbKY",
+      "name": "PersonAdresse",
+      "x": 1177.2881266470283,
+      "y": -14.436429711430208,
+      "locked": false,
+      "fields": [
+        {
+          "id": "jGtr7JRh_GFGu8bM9Ku7Z",
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "name": "AdresseId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "id": "v6aDKpGuL3qOGvTnG3n3q"
+        },
+        {
+          "id": "SEqppWHigx29U5HIpbef_",
+          "name": "PersonId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "icSqqgNrEBNZkm4As4gWo",
+          "name": "Adressart",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "IJ2CP1bTGAQ07l5yS8hSt",
+          "name": "GueltigAb",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "ipc5tGZSynL9vHDSilzJu",
+          "name": "GueltigBis",
+          "type": "DATE",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false,
+      "width": 258
+    },
+    {
+      "id": "J8XBOk50vpxgaLsZ21A1C",
+      "name": "EmailAdresse",
+      "x": 1999.9317595788407,
+      "y": 265.9995029759864,
+      "locked": false,
+      "fields": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "81FaXCqIFyHihBuNvZFZQ"
+        },
+        {
+          "id": "_Fbimwyu2nNGgKuTZrFCi",
+          "name": "PersonId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "g1JD-isk4XvzCTmOG4dVl",
+          "name": "Email",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        },
+        {
+          "id": "aoV-aQR2NVhYzcJ_ErqVo",
+          "name": "EmailTyp",
+          "type": "NVARCHAR",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 50
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "uniqueConstraints": [],
+      "color": "#175e7a",
+      "collapsed": false,
+      "width": 236
+    }
+  ],
+  "relationships": [
+    {
+      "startTableId": "5iIPEXveq-XDmUgTnydg9",
+      "startFieldId": "GeARkiGJE61q35NMg5KE4",
+      "endTableId": "PefdkdekXrihvcF_k9HkY",
+      "endFieldId": "SVSP8GD0RsTDCDw2f0JJm",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "GeARkiGJE61q35NMg5KE4",
+          "endFieldId": "SVSP8GD0RsTDCDw2f0JJm"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_BundeslandId",
+      "color": "#808080",
+      "id": "PYx_oQ3KhfO8rnja71Syl"
+    },
+    {
+      "startTableId": "PefdkdekXrihvcF_k9HkY",
+      "startFieldId": "DYkwMuasxZV3_olI_87hL",
+      "endTableId": "BwWhr8AGtVbfgUMJ2FwIN",
+      "endFieldId": "oRetr0RMMDjB6ljVCeVJ7",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "DYkwMuasxZV3_olI_87hL",
+          "endFieldId": "oRetr0RMMDjB6ljVCeVJ7"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_BezirkId",
+      "color": "#808080",
+      "id": "ZKzmnwETDaPEiF0kxXe6g"
+    },
+    {
+      "startTableId": "wFUiUnn_olmJILiTQJnu-",
+      "startFieldId": "4ZZAR-sucjoQbwC2akX3C",
+      "endTableId": "BwWhr8AGtVbfgUMJ2FwIN",
+      "endFieldId": "yxRHEa9fq-_77LQxMn0Ux",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "4ZZAR-sucjoQbwC2akX3C",
+          "endFieldId": "yxRHEa9fq-_77LQxMn0Ux"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_StrasseId",
+      "color": "#808080",
+      "id": "vndBur6y8JAQMWQVtALv5"
+    },
+    {
+      "startTableId": "5iIPEXveq-XDmUgTnydg9",
+      "startFieldId": "hEvRZYh8u_sY0Sdkj9FjV",
+      "endTableId": "5pcI-8Yt_W-ZDndTGItYZ",
+      "endFieldId": "NUTff-2QHLSxJYFroryev",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "hEvRZYh8u_sY0Sdkj9FjV",
+          "endFieldId": "NUTff-2QHLSxJYFroryev"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_LandId",
+      "color": "#808080",
+      "id": "lCOuy1n6kD0vpEEms65Mu"
+    },
+    {
+      "startTableId": "7g1jM6YuJKLFsN_6xmUwJ",
+      "startFieldId": "qqrGD71OwNFbJ8CZfGez1",
+      "endTableId": "PefdkdekXrihvcF_k9HkY",
+      "endFieldId": "DYkwMuasxZV3_olI_87hL",
+      "cardinality": "many_to_one",
+      "fields": [
+        {
+          "startFieldId": "qqrGD71OwNFbJ8CZfGez1",
+          "endFieldId": "DYkwMuasxZV3_olI_87hL"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_BezirkId",
+      "color": "#808080",
+      "id": "gezfBL4qXAMC5gkP1wodV"
+    },
+    {
+      "startTableId": "wFUiUnn_olmJILiTQJnu-",
+      "startFieldId": "jOweqHM0BkvVUQ4-q2VvC",
+      "endTableId": "eHIYIwXgl7vQdiIF6qbKY",
+      "endFieldId": "v6aDKpGuL3qOGvTnG3n3q",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "jOweqHM0BkvVUQ4-q2VvC",
+          "endFieldId": "v6aDKpGuL3qOGvTnG3n3q"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_AdresseId",
+      "color": "#808080",
+      "id": "xlRKx8XaNgfYZEsGtyUkX"
+    },
+    {
+      "startTableId": "smZh0yJa2tvNyFHPWYFL9",
+      "startFieldId": "n-FU7eyeRT04-iNtWOSst",
+      "endTableId": "eHIYIwXgl7vQdiIF6qbKY",
+      "endFieldId": "SEqppWHigx29U5HIpbef_",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "n-FU7eyeRT04-iNtWOSst",
+          "endFieldId": "SEqppWHigx29U5HIpbef_"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_PersonId",
+      "color": "#808080",
+      "id": "1KTLNFaMnUi9Scn-zWfvv"
+    },
+    {
+      "startTableId": "smZh0yJa2tvNyFHPWYFL9",
+      "startFieldId": "n-FU7eyeRT04-iNtWOSst",
+      "endTableId": "J8XBOk50vpxgaLsZ21A1C",
+      "endFieldId": "_Fbimwyu2nNGgKuTZrFCi",
+      "cardinality": "one_to_many",
+      "fields": [
+        {
+          "startFieldId": "n-FU7eyeRT04-iNtWOSst",
+          "endFieldId": "_Fbimwyu2nNGgKuTZrFCi"
+        }
+      ],
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_PersonId",
+      "color": "#808080",
+      "id": "DHfnOje8P8mviM19geWsL"
+    }
+  ],
+  "notes": [],
+  "subjectAreas": [],
+  "views": [],
+  "database": "transactsql",
+  "title": "Person_DB"
+}
